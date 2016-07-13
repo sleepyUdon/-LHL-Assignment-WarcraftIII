@@ -10,4 +10,16 @@
 
 @implementation Unit
 
+-(instancetype)initwithHP:(int) healthPoints AP:(int) attackPower
+{
+    if (self) {
+        _healthPoints = healthPoints;
+        _attackPower = attackPower;
+    }
+    return self;
+}
+
+
+
 @end
+

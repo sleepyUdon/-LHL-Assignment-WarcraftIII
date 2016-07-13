@@ -79,4 +79,6 @@
     XCTAssertEqualObjects(expected, result, @"barracks should train a footman with enough resources");
 }
 
+
+
 @end
