@@ -10,16 +10,27 @@
 
 @implementation Unit
 
--(instancetype)initwithHP:(int) healthPoints AP:(int) attackPower
+
+-(instancetype)initWithHP:(int)HP AP:(int)AP
 {
+    self = [super init];
     if (self) {
-        _healthPoints = healthPoints;
-        _attackPower = attackPower;
+        _healthPoints = HP;
+        _attackPower = AP;
     }
     return self;
 }
 
+-(void)attack: (Unit*)Unit withDamage: (int)damage{
+    Unit.healthPoints = Unit.healthPoints - damage;
+    
+}
 
+
+
+-(void) damage: (int) damageToUnit{
+    self.healthPoints -=damageToUnit;
+}
 
 @end
 

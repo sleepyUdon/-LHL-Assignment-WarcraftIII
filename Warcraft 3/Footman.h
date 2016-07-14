@@ -12,8 +12,6 @@
 @interface Footman : Unit
 
 
-
-
 -(void)damage;
 
 @end

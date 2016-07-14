@@ -12,7 +12,10 @@
 
 @property (assign) int healthPoints;
 @property (assign) int attackPower;
+@property int damage;
 
--(instancetype)initwithHP:(int) healthPoints AP:(int) attackPower;
+-(instancetype)initWithHP:(int)HP AP:(int)AP;
+
+-(void)attack: (Unit*)Unit withDamage: (int)damage;
 
 @end

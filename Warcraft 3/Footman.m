@@ -22,5 +22,6 @@
     self.healthPoints = self.healthPoints-4;
 }
 
+
 @end
 
